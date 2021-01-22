@@ -3,7 +3,7 @@ import { CaixaSubDestaques } from '../../styled-principal';
 import NoticiaSubDestaque from './NoticiaSubDestaque/NoticiaSubDestaque';
 
 const mockSubDestaques = {
-    imagem: "https://picsum.photos/500/150",
+    imagem: "https://picsum.photos/1000/1500",
     titulo: "Lorem Ipsom",
     descricao: "Lorem ipsum dolor sit amet,consec tetuer adipi scing elit, sed diam"
 }

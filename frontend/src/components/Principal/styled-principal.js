@@ -36,6 +36,7 @@ export const CaixaDestaques = styled.div `
     width: 100%;
     height: 60%;
     display: flex;
+    justify-content: space-between;
 `
 
 export const CaixaSubDestaques = styled.div `
@@ -136,4 +137,64 @@ export const DescricaoDestaque = styled.p `
 export const Imagem = styled.img `
     width: 100%;
     height: 100%;
+`
+
+export const CaixaDestaqueSecundario = styled.div `
+    //border: 1px solid red;
+    width: 25%;
+    height: 96%;
+    box-sizing: border-box;
+    max-height: 100%;
+`
+
+export const ImgSec = styled.img `
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+`
+
+export const TituloSec = styled.h4 `
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    color: ${dourado};
+    text-align: start;
+`
+
+export const ParagrafoSec = styled.p `
+    margin: 0px;
+    padding: 0px;
+    font-size: 0.9em;
+    text-align: start;
+`
+
+export const CaixaImagemDestaque = styled.div `
+    width: 100%;
+    height: 330px;
+    //border: 1px solid blue;
+    background-image: url(${props => props.imagem});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+`
+
+export const CaixaImagemSubDestaque = styled.div `
+    width: 500px;
+    height: 150px;
+    //border: 1px solid blue;
+    background-image: url(${props => props.imagem});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+`
+
+export const CaixaImagemDestaqueSecundario = styled.div `
+    width: 100%;
+    height: 80%;
+    //border: 1px solid blue;
+    background-image: url(${props => props.imagem});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 `

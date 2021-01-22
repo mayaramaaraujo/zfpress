@@ -1,10 +1,10 @@
 import React from 'react'
-import { CaixaDestaquePrincipal, DescricaoDestaque, Imagem } from '../../../styled-principal';
+import { CaixaDestaquePrincipal, CaixaImagemDestaque, DescricaoDestaque} from '../../../styled-principal';
 
 function DestaquePrincipal(props) {
     return (
         <CaixaDestaquePrincipal>
-            <Imagem src={props.imagem} />
+            <CaixaImagemDestaque imagem={props.imagem}/>
             <DescricaoDestaque>{props.descricao}</DescricaoDestaque>
         </CaixaDestaquePrincipal>
     )
