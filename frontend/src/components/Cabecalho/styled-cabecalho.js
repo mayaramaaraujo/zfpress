@@ -21,7 +21,7 @@ export const LogoZfCaixa = styled.div `
     box-sizing: border-box;
     display: flex;
     justify-content: start;
-    padding: 30px 0px 30px 70px;
+    padding: 10px 0px 30px 70px;
 `
 
 // filho do cabecalho
