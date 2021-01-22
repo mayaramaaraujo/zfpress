@@ -1,14 +1,22 @@
-import { func } from 'prop-types'
-import React from 'react'
+import React  from 'react'
 import DataAtual from './DataAtual/DataAtual'
 import FaleConosco from './FaleConosco/FaleConosco'
 import {CaixaBuscaContainer} from '../styled-cabecalho'
+import { dias, meses } from '../../../constants/arraysUteis'
 
 function CaixaBusca() {
+    const data = new Date()
+
     return (
         <CaixaBuscaContainer>
             <FaleConosco />
-            <DataAtual diaSemana="TERÇA-FEIRA" dia="19" mes="JANEIRO" ano="2021" cidade="CUIABÁ"/>
+            <DataAtual 
+                diaSemana={dias[data.getDay()]} 
+                dia={data.getDate()} 
+                mes={meses[data.getMonth()]} 
+                ano={data.getFullYear()} 
+                cidade="CUIABÁ"
+            />
         </CaixaBuscaContainer>
     )
 }

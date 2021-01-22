@@ -1,9 +1,8 @@
 import React from 'react'
-import { FaleConoscoContainer, Links, Inputs, CaixaInputs } from '../../styled-cabecalho';
+import { FaleConoscoContainer, Links, Inputs, CaixaInputs, Icones, IconeDeBusca } from '../../styled-cabecalho';
 import IconFacebook from '../../../../assets/facebook.png'
 import IconInstagram from '../../../../assets/instagrampequeno.png'
-import SearchIcon from '@material-ui/icons/Search';
-
+import { Facebook, Instagram } from '../../../../constants/linksUteis';
 
 function FaleConosco(){
     return (
@@ -13,10 +12,14 @@ function FaleConosco(){
             <Links href="">EXPENDIENTE</Links>
             <CaixaInputs>
                 <Inputs placeholder="PESQUISAR NO ZF PRESS"/>
-                <SearchIcon />
+                <IconeDeBusca />                    
             </CaixaInputs>
-            <img src={IconInstagram} />
-            <img src={IconFacebook} />
+            <a href={Instagram}>
+                <Icones src={IconInstagram} />
+            </a>
+            <a href={Facebook}>
+                <Icones src={IconFacebook} />
+            </a>
 
         </FaleConoscoContainer>
     )
