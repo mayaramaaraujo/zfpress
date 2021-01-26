@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { branco, cinzaClaro } from '../../../../constants/cores';
 import { CaixaDestaques } from '../../styled-principal';
 import DestaquePrincipal from './DestaquePrincipal.jsx/DestaquePrincipal';
 import DestaqueSecundario from './DestaqueSecundario/DestaqueSecundario';
@@ -6,6 +7,18 @@ import DestaqueSecundario from './DestaqueSecundario/DestaqueSecundario';
 const mockDestaques = [
     {   
         imagem: "https://picsum.photos/500/430",
+        descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum orci euismod eros commodo tincidunt."
+    },
+    {   
+        imagem: "https://picsum.photos/500/431",
+        descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum orci euismod eros commodo tincidunt."
+    },
+    {   
+        imagem: "https://picsum.photos/500/433",
+        descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum orci euismod eros commodo tincidunt."
+    },
+    {   
+        imagem: "https://picsum.photos/500/434",
         descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum orci euismod eros commodo tincidunt."
     },
     {   
@@ -29,17 +42,19 @@ const mockSecundario = {
 }
 
 function Destaques() {
-    const [tamanho, setTamanho] = useState(mockDestaques.length - 1) //4
-    const [imagemIndex, setImagemIndex] = useState(0) //0
-
-    //console.log(tamanho)
+    const [tamanho, setTamanho] = useState(mockDestaques.length - 1)
+    const [imagemIndex, setImagemIndex] = useState(0)
 
     const ProximaImagem = () => {
         if(imagemIndex === tamanho){
-            setImagemIndex(0)
+            setTimeout(() => {
+                setImagemIndex(0)
+            }, 2000)
         } else {
-            setImagemIndex(imagemIndex + 1)
-        }      
+            setTimeout(() => {
+                setImagemIndex(imagemIndex + 1)
+            }, 2000)
+        }
     }
 
     useEffect(() => {
@@ -48,7 +63,7 @@ function Destaques() {
         }, 5000)
 
         return () => clearInterval(intervaloId)
-    }, [imagemIndex])
+    },[imagemIndex])
 
 
     return (
@@ -56,6 +71,9 @@ function Destaques() {
             <DestaquePrincipal
                 imagem={mockDestaques[imagemIndex].imagem}
                 descricao={mockDestaques[imagemIndex].descricao}
+                index={imagemIndex}
+                mudarIndex={setImagemIndex}
+                array={mockDestaques}
             />
 
             <DestaqueSecundario 

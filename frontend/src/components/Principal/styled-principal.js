@@ -168,6 +168,36 @@ export const ParagrafoSec = styled.p `
     text-align: start;
 `
 
+export const BolinhaCinza = styled.span `
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background-color: ${cinzaClaro}; 
+    margin: 0px 8px 0px 0px;
+    position: relative;
+    cursor: pointer;
+`
+
+export const BolinhaBranca = styled.span `
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background-color: white; 
+    margin: 0px 8px 0px 0px;
+    position: relative;
+    cursor: pointer;
+`
+
+export const CaixaBolinha = styled.div `
+    display: flex;
+    align-items: space-around;
+    justify-content: center;  
+    width: 100%;
+    //border: 1px solid blue;
+    position: absolute;
+    bottom: 60px;
+`
+
 export const CaixaImagemDestaque = styled.div `
     width: 100%;
     height: 330px;
