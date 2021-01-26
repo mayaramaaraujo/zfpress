@@ -56,6 +56,7 @@ function Destaques() {
             <DestaquePrincipal
                 imagem={mockDestaques[imagemIndex].imagem}
                 descricao={mockDestaques[imagemIndex].descricao}
+                index={imagemIndex}
             />
 
             <DestaqueSecundario 
