@@ -185,7 +185,6 @@ export const BolinhaBranca = styled.span `
     background-color: white; 
     margin: 0px 8px 0px 0px;
     position: relative;
-    cursor: pointer;
 `
 
 export const CaixaBolinha = styled.div `

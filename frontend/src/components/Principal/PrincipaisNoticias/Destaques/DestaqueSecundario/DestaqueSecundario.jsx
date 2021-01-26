@@ -1,5 +1,5 @@
 import React from 'react'
-import { CaixaDestaqueSecundario, CaixaImagemDestaqueSecundario, ImgSec, ParagrafoSec, TituloSec } from '../../../styled-principal';
+import { CaixaDestaqueSecundario, CaixaImagemDestaqueSecundario, ParagrafoSec, TituloSec } from '../../../styled-principal';
 
 function DestaqueSecundario(props) {
     return (

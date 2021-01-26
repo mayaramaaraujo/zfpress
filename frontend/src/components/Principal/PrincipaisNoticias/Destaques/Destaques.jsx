@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { branco, cinzaClaro } from '../../../../constants/cores';
 import { CaixaDestaques } from '../../styled-principal';
 import DestaquePrincipal from './DestaquePrincipal.jsx/DestaquePrincipal';
 import DestaqueSecundario from './DestaqueSecundario/DestaqueSecundario';
@@ -72,8 +71,6 @@ function Destaques() {
                 imagem={mockDestaques[imagemIndex].imagem}
                 descricao={mockDestaques[imagemIndex].descricao}
                 index={imagemIndex}
-                mudarIndex={setImagemIndex}
-                array={mockDestaques}
             />
 
             <DestaqueSecundario 
