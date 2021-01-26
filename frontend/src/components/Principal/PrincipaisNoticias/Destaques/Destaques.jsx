@@ -19,6 +19,18 @@ const mockDestaques = [
     {   
         imagem: "https://picsum.photos/500/434",
         descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum orci euismod eros commodo tincidunt."
+    },
+    {   
+        imagem: "https://picsum.photos/500/434",
+        descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum orci euismod eros commodo tincidunt."
+    },
+    {   
+        imagem: "https://picsum.photos/500/434",
+        descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum orci euismod eros commodo tincidunt."
+    },
+    {   
+        imagem: "https://picsum.photos/500/434",
+        descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum orci euismod eros commodo tincidunt."
     }
 ]
 
@@ -57,6 +69,7 @@ function Destaques() {
                 imagem={mockDestaques[imagemIndex].imagem}
                 descricao={mockDestaques[imagemIndex].descricao}
                 index={imagemIndex}
+                setIndex={setImagemIndex}
             />
 
             <DestaqueSecundario 

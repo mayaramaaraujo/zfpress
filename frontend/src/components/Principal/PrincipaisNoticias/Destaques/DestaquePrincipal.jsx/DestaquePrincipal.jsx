@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { CaixaBolinhas, CaixaDestaquePrincipal, CaixaImagemDestaque, DescricaoDestaque} from '../../../styled-principal';
 import BolinhaBranca from './Bolinhas/BolinhaBranca';
 import BolinhaCinza from './Bolinhas/BolinhaCinza';
 
 function DestaquePrincipal(props) {
+
     return (
         <CaixaDestaquePrincipal>
             <CaixaImagemDestaque imagem={props.imagem}/>

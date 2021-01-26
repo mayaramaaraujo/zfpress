@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { cinzaClaro, dourado } from '../../constants/cores'
+import { cinzaClaro, cinzaTexto, dourado } from '../../constants/cores'
 
 //PAIS
 
@@ -120,6 +120,7 @@ export const CaixaDestaquePrincipal = styled.div `
     width: 73%;
     height: 96%;
     position: relative;
+    min-width: 600px;
 `
 
 export const DescricaoDestaque = styled.p `
@@ -130,6 +131,7 @@ export const DescricaoDestaque = styled.p `
     text-align: start;
     font-weight: bold;
     width: 80%;
+    min-width: 600px;
     color: white;
     font-size: 1.1em;    
 `
@@ -150,6 +152,7 @@ export const BolinhaBrancaEstilo = styled.div `
     border-radius: 10px;
     background-color: white;
     margin: 0px 10px 0px 0px;
+    cursor: pointer;
 `
 
 export const BolinhaCinzaEstilo = styled.div `
@@ -158,6 +161,7 @@ export const BolinhaCinzaEstilo = styled.div `
     border-radius: 10px;
     background-color: ${cinzaClaro};
     margin: 0px 10px 0px 0px;
+    cursor: pointer;
 `
 
 export const Imagem = styled.img `
