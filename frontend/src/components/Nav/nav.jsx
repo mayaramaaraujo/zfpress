@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { NavCaixa } from './styled-nav';
 import Link from './Link/Link';
 
