@@ -134,6 +134,32 @@ export const DescricaoDestaque = styled.p `
     font-size: 1.1em;    
 `
 
+export const CaixaBolinhas = styled.div `
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    //border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+export const BolinhaBrancaEstilo = styled.div `
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 0px 10px 0px 0px;
+`
+
+export const BolinhaCinzaEstilo = styled.div `
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: ${cinzaClaro};
+    margin: 0px 10px 0px 0px;
+`
+
 export const Imagem = styled.img `
     width: 100%;
     height: 100%;
