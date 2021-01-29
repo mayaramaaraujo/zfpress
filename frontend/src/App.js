@@ -2,6 +2,7 @@ import './App.css';
 import Inicio from './screens/Home/Inicio';
 import NossaEstrutura from './screens/NossaEstrutura/NossaEstrutura';
 import QuemSomos from './screens/QuemSomos/QuemSomos';
+import Servicos from './screens/Serviços/Servicos';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <Inicio />
         <QuemSomos/>
         <NossaEstrutura />
+        <Servicos />
     </div>
   );
 }
