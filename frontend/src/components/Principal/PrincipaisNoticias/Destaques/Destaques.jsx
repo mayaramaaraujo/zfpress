@@ -21,15 +21,15 @@ const mockDestaques = [
         descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum orci euismod eros commodo tincidunt."
     },
     {   
-        imagem: "https://picsum.photos/500/434",
+        imagem: "https://picsum.photos/500/435",
         descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum orci euismod eros commodo tincidunt."
     },
     {   
-        imagem: "https://picsum.photos/500/434",
+        imagem: "https://picsum.photos/500/436",
         descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum orci euismod eros commodo tincidunt."
     },
     {   
-        imagem: "https://picsum.photos/500/434",
+        imagem: "https://picsum.photos/500/437",
         descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum orci euismod eros commodo tincidunt."
     }
 ]
