@@ -12,6 +12,10 @@ import {
     Img3 
 } from './styled-nossaestrutura';
 import CoroaPreta from '../../assets/coroapreta.png'
+import ZF1 from '../../assets/zfpress1.jpg'
+import ZF2 from '../../assets/zfpress2.jpg'
+import ZF3 from '../../assets/zfpress3.jpg'
+
 
 function NossaEstrutura(){
     return (
@@ -26,9 +30,9 @@ function NossaEstrutura(){
                 </TextoNossaEstrutura>
             </CaixaTexto>
             <CaixaImagens>
-                <Img1 img="https://picsum.photos/400/200" />
-                <Img2 img="https://picsum.photos/450/200" />
-                <Img3 img="https://picsum.photos/380/200" />
+                <Img1 img={ZF3} />
+                <Img2 img={ZF2} />
+                <Img3 img={ZF1} />
             </CaixaImagens>
         </CaixaNossaEstrutura>
     )

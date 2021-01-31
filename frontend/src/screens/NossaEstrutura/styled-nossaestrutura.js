@@ -3,17 +3,22 @@ import { grafite } from '../../constants/cores'
 import { Typography } from '@material-ui/core';
 
 export const CaixaNossaEstrutura = styled.div `
-    height: 100vh;
+    height: 130vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 60px;
+
 `
 
 export const CaixaTexto = styled.div `
+    display: flex;
+    flex-direction: column;
     //border: 1px solid red;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    align-items: flex-start;
+    justify-content: space-evenly;
     text-align: start;
     //margin: 60px;
 `
@@ -34,8 +39,8 @@ export const TituloNossaEstrutura = styled(Typography) `
 export const TextoNossaEstrutura = styled.p `
     //border: 1px solid blue;
     letter-spacing: 3px;
-    width: 60%;
-    font-size: 1.2em;
+    width: 50%;
+    font-size: 1.1em;
     line-height: 35px;
 `
 

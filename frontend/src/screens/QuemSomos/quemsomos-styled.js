@@ -22,8 +22,10 @@ export const TituloQuemSomos1 = styled.h1 `
     color: white;
     padding: 5px;
     margin: 0px;
-    font-size: 2.5em;
+    font-size: 2.7em;
     text-align: center;
+    font-weight: normal;
+    letter-spacing: 4px;
 `
 
 export const TituloQuemSomos2 = styled.h1 `
@@ -31,9 +33,11 @@ export const TituloQuemSomos2 = styled.h1 `
     background-color: ${grafite};
     color: white;
     padding: 5px;
-    margin: 20px 10px 10px 0px;
-    font-size: 2.5em;
+    margin: 10px 10px 10px 0px;
+    font-size: 2.7em;
     text-align: center;
+    font-weight: normal;
+    letter-spacing: 4px;
 `
 
 export const ContainerTexto = styled.div `
