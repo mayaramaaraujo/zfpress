@@ -97,9 +97,10 @@ export const Item = styled.div `
     align-items: center;
     padding-right: 20px;
     padding-left: 5px;
+    text-align: right;
 `
 
 export const TitItem = styled.h3 `
     padding-left: 20px;
-    
+    cursor: pointer;    
 `
