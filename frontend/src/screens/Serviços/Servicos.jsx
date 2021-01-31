@@ -58,6 +58,7 @@ function Servicos(){
         }
     }
 
+
     return(
         <CaixaServicos>
             <CaixaDescricaoServicos>
@@ -74,9 +75,21 @@ function Servicos(){
 
                     {mockDescricao.map((item, i) => {
                         if(index === i){
-                            return <ItemServico servico={item.titulo} fundo={dourado} texto={grafite}/>
+                            return <ItemServico 
+                                        servico={item.titulo} 
+                                        fundo={dourado} 
+                                        texto={grafite}
+                                        setIndex={setIndex}
+                                        index={i}
+                                    />
                         }   
-                        return <ItemServico servico={item.titulo} fundo={grafite} texto={dourado} />
+                        return <ItemServico 
+                                    servico={item.titulo} 
+                                    fundo={grafite} 
+                                    texto={dourado}
+                                    setIndex={setIndex}
+                                    index={i} 
+                                />
                     })}
 
                 </ContainerNomeServicos>

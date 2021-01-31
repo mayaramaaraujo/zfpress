@@ -6,7 +6,7 @@ function ItemServico(props) {
     return (
         <Item fundo={props.fundo} texto={props.texto}>
             <img src={Coroa} />
-            <TitItem>{props.servico}</TitItem>
+            <TitItem onClick={() => props.setIndex(props.index)}>{props.servico}</TitItem>
         </Item>
     )
 }

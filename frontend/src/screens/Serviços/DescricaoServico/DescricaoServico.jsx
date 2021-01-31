@@ -6,8 +6,8 @@ function DescricaoServico(props){
         <Descricao>
             <TitDescricao>{props.titulo}</TitDescricao>
             <ParagDescricao>{props.descricao}</ParagDescricao>
-            {props.servicos.map((item) => {
-                return <ServicosLista>{item}</ServicosLista>
+            {props.servicos.map((item, i) => {
+                return <ServicosLista key={i}>{item}</ServicosLista>
             })}
         </Descricao>
     )
