@@ -1,4 +1,5 @@
 import './App.css';
+import Clientes from './screens/Clientes/Clientes';
 import Inicio from './screens/Home/Inicio';
 import NossaEstrutura from './screens/NossaEstrutura/NossaEstrutura';
 import QuemSomos from './screens/QuemSomos/QuemSomos';
@@ -11,6 +12,7 @@ function App() {
         <QuemSomos/>
         <NossaEstrutura />
         <Servicos />
+        <Clientes />
     </div>
   );
 }

@@ -28,13 +28,14 @@ export const CaixaTitulo = styled.div `
     //margin: 60px;
     font-weight: lighter;
 `
-export const TituloNossaEstrutura = styled(Typography) `
+export const TituloNossaEstrutura = styled.p `
     padding: 10px 0px 10px 0px;
     margin: 0px;
     //border: 1px solid red;
     color: ${grafite};
     width: 35%;
     letter-spacing: 3px;
+    font-size: 2.5em;
 `
 export const TextoNossaEstrutura = styled.p `
     //border: 1px solid blue;
