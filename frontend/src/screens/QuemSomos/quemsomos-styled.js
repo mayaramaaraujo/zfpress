@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import {cinzaMaisClaro, grafite } from '../../constants/cores'
 
 export const CaixaQuemSomos = styled.div `
-    height: 80vh;
+    min-height: 80vh;
     background-color: ${cinzaMaisClaro};
     display: flex;
     flex-direction: column;
@@ -12,6 +12,7 @@ export const CaixaTitulo = styled.div `
     display: flex;
     flex-direction: column;
     width: 20%;
+    min-width: 40%;
     margin: 0px 0px 0px 50px;
     padding-top: 50px;
 `

@@ -3,10 +3,15 @@ import { dourado, grafite } from '../../constants/cores'
 
 export const CaixaServicos = styled.div `
     background-color: ${dourado};
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    @media only screen and (max-width) {
+        flex-wrap: wrap;
+        border: 1px solid red;
+    }
 `
 
 export const CaixaDescricaoServicos = styled.div `

@@ -4,6 +4,7 @@ import { dourado } from '../../constants/cores'
 export const CasesCaixa = styled.div `
     text-align: start;
     height: 100%;
+    
     //border: 1px solid red;
 `
 
@@ -91,4 +92,6 @@ export const ImagemPrincipal = styled.img `
 export const ImagemSecundaria = styled.img `    
     width: 30%;
     object-fit: cover;
+    max-width: 300px;
+    min-width: 100px;
 `

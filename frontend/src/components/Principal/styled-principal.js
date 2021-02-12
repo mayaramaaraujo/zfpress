@@ -7,9 +7,11 @@ export const CaixaPrincipal = styled.div `
     //border: 1px solid red;
     box-sizing: border-box;
     margin: 0px 30px 0px 30px;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
+    //flex-wrap: wrap;
     padding: 2%;
+
 `
 
 export const CaixaNoticiasPrincipais = styled.div `
@@ -37,6 +39,7 @@ export const CaixaDestaques = styled.div `
     height: 60%;
     display: flex;
     justify-content: space-between;
+
 `
 
 export const CaixaSubDestaques = styled.div `
@@ -120,7 +123,7 @@ export const CaixaDestaquePrincipal = styled.div `
     width: 73%;
     height: 96%;
     position: relative;
-    min-width: 600px;
+    min-width: 300px;
 `
 
 export const DescricaoDestaque = styled.p `
@@ -131,7 +134,7 @@ export const DescricaoDestaque = styled.p `
     text-align: start;
     font-weight: bold;
     width: 80%;
-    min-width: 600px;
+    min-width: 300px;
     color: white;
     font-size: 1.1em;    
 `
@@ -144,6 +147,7 @@ export const CaixaBolinhas = styled.div `
     display: flex;
     justify-content: center;
     align-items: center;
+
 `
 
 export const BolinhaBrancaEstilo = styled.div `

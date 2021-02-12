@@ -11,6 +11,15 @@ export const NavCaixa = styled.div `
     justify-content: space-evenly;
     align-items: center;
     margin: 0px 30px 0px 30px;
+
+    @media only screen and (max-width: 640px){
+        //border: 1px solid red;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: auto;
+        min-width: 300px; 
+        margin: 0px;     
+    }
 `
 
 export const LinksNav = styled.div `
