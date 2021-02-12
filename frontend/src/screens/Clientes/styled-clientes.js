@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import { dourado } from '../../constants/cores'
 
 export const CaixaClientes = styled.div `
-    height: 100vh;
     //border: 1px solid red;
     box-sizing: border-box;
 `
@@ -43,6 +42,7 @@ export const CaixaClientesLogos = styled.div `
 
 export const CaixaLogo = styled.div `
     width: 22.5%;
+    min-width: 175px;
     display: flex;
     justify-content: center;
     //border: 1px solid red;
