@@ -7,15 +7,27 @@ export const CaixaPrincipal = styled.div `
     //border: 1px solid red;
     box-sizing: border-box;
     margin: 0px 30px 0px 30px;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
+    //flex-wrap: wrap;
     padding: 2%;
-`
+
+    @media only screen and (max-width: 640px){
+        flex-wrap: wrap;
+        //border: 1px solid red;
+        height: auto;
+    }`
 
 export const CaixaNoticiasPrincipais = styled.div `
     //border: 1px solid blue;
     box-sizing: border-box;
     width: 80%;
+
+    @media only screen and (max-width: 640px){
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
 
 `
 
@@ -26,6 +38,12 @@ export const CaixaNoticiasSecundarias = styled.div `
     height: 100%;
     overflow: auto;
     padding: 0px 1% 0px 1%;
+
+    @media only screen and (max-width: 640px){
+        width: 100%;
+        height: auto;
+        margin: 10px 0px;
+    }
 `
  
 //FILHOS
@@ -37,15 +55,26 @@ export const CaixaDestaques = styled.div `
     height: 60%;
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: 640px){
+        //border: 1px solid green;
+        flex-wrap: wrap;
+        height: 70vh;
+    }
+
 `
 
 export const CaixaSubDestaques = styled.div `
     //border: 1px solid green;
     box-sizing: border-box;
     width: 100%;
-    height: 40%;
+    min-height: 40%;
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: 640px){
+
+    }
 `
 
 // noticias secundarias laterais
@@ -120,7 +149,13 @@ export const CaixaDestaquePrincipal = styled.div `
     width: 73%;
     height: 96%;
     position: relative;
-    min-width: 600px;
+    min-width: 300px;
+
+    @media only screen and (max-width: 640px){
+        position: sticky;
+        width: 100%;
+        height: 35%;
+    }
 `
 
 export const DescricaoDestaque = styled.p `
@@ -131,9 +166,13 @@ export const DescricaoDestaque = styled.p `
     text-align: start;
     font-weight: bold;
     width: 80%;
-    min-width: 600px;
+    min-width: 300px;
     color: white;
-    font-size: 1.1em;    
+    font-size: 1.1em;
+    
+    @media only screen and (max-width: 640px){
+        bottom: -70px;
+    }
 `
 
 export const CaixaBolinhas = styled.div `
@@ -144,6 +183,11 @@ export const CaixaBolinhas = styled.div `
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width: 640px){
+        bottom: -100px;
+    }
+
 `
 
 export const BolinhaBrancaEstilo = styled.div `
@@ -152,7 +196,7 @@ export const BolinhaBrancaEstilo = styled.div `
     border-radius: 10px;
     background-color: white;
     margin: 0px 10px 0px 0px;
-    cursor: pointer;
+    //cursor: pointer;
 `
 
 export const BolinhaCinzaEstilo = styled.div `
@@ -175,12 +219,21 @@ export const CaixaDestaqueSecundario = styled.div `
     height: 96%;
     box-sizing: border-box;
     max-height: 100%;
+
+    @media only screen and (max-width: 640px){
+        //border: 1px solid yellow;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 15px;
+    }
 `
 
 export const ImgSec = styled.img `
     width: 100%;
     max-width: 100%;
     overflow: hidden;
+
 `
 
 export const TituloSec = styled.h4 `

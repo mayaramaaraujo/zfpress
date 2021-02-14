@@ -1,26 +1,32 @@
 import styled from 'styled-components'
 import { grafite } from '../../constants/cores'
-import { Typography } from '@material-ui/core';
 
 export const CaixaNossaEstrutura = styled.div `
-    height: 130vh;
+    //height: 130vh;
+    min-height: 130vh;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 60px;
-
+    flex-wrap: wrap;
 `
 
 export const CaixaTexto = styled.div `
     display: flex;
     flex-direction: column;
     //border: 1px solid red;
-    width: 100%;
+    width: 50%;
     height: 100%;
     box-sizing: border-box;
     justify-content: space-evenly;
     text-align: start;
     //margin: 60px;
+
+    @media only screen and (max-width:640px) {
+        width: 100%;
+    }
+
+    
 `
 
 export const CaixaTitulo = styled.div `
@@ -36,6 +42,11 @@ export const TituloNossaEstrutura = styled.p `
     width: 35%;
     letter-spacing: 3px;
     font-size: 2.5em;
+    @media only screen and (max-width){
+        width: 100%;
+        border: 1px solid red;
+    }
+
 `
 export const TextoNossaEstrutura = styled.p `
     //border: 1px solid blue;
@@ -43,6 +54,10 @@ export const TextoNossaEstrutura = styled.p `
     width: 50%;
     font-size: 1.1em;
     line-height: 35px;
+
+    @media only screen and (max-width: 640px){
+        width: 100%;
+    }
 `
 
 export const Coroa = styled.img `
@@ -51,12 +66,17 @@ export const Coroa = styled.img `
 
 export const CaixaImagens = styled.div `
     //border: 1px solid red;
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 100vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media only screen and (max-width: 640px) {
+        height: 130vh;
+        width: 100%;
+    }
 `
 
 export const Img1 = styled.div `
@@ -66,6 +86,7 @@ export const Img1 = styled.div `
     background-repeat: no-repeat;
     background-size: cover;
     //border: 1px solid red;
+
 `
 
 export const Img2 = styled.div `

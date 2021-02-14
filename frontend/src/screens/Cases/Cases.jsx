@@ -34,7 +34,7 @@ const mockCases = [
 
 function Cases() {
     const [posicao, setPosicao] = useState(0)
-
+    
     const passarParaDireita = () => {
         setPosicao(posicao + 1)
         if(posicao === (mockCases[0].length - 1)){

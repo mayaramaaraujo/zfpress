@@ -35,7 +35,7 @@ const mockDestaques = [
 ]
 
 const mockSecundario = {
-    titulo: "Lorem ipsum",
+    titulo: "Secundário",
     descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     imagem: "https://picsum.photos/300/320"
 }

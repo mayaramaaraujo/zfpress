@@ -38,6 +38,10 @@ export const CaixaClientesLogos = styled.div `
     padding: 0px 25px;
     justify-content: space-between;
     //padding: 20px;
+
+    @media only screen and (max-width:640px) {
+        justify-content: center;
+    }
 `
 
 export const CaixaLogo = styled.div `

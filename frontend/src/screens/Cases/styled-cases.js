@@ -4,6 +4,7 @@ import { dourado } from '../../constants/cores'
 export const CasesCaixa = styled.div `
     text-align: start;
     height: 100%;
+    
     //border: 1px solid red;
 `
 
@@ -43,6 +44,11 @@ export const CaixaCases = styled.div `
     //border: 1px solid red;
     display: flex;
     width: 90%;
+
+    @media only screen and (max-width: 640px){
+        flex-wrap: wrap;
+        width: 100%;
+    }
 `
 
 export const SetaDireitaImg = styled.img `
@@ -69,6 +75,9 @@ export const CaseCaixa = styled.div `
     box-sizing: border-box;
     //border: 1px solid red;
     height: auto;
+    @media only screen and (max-width:640px) {
+        width: 100%;
+    }
 `
 
 export const CaixaImagensCase = styled.div `
@@ -91,4 +100,6 @@ export const ImagemPrincipal = styled.img `
 export const ImagemSecundaria = styled.img `    
     width: 30%;
     object-fit: cover;
+    max-width: 300px;
+    min-width: 100px;
 `

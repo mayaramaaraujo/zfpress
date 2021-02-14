@@ -3,10 +3,14 @@ import { dourado, grafite } from '../../constants/cores'
 
 export const CaixaServicos = styled.div `
     background-color: ${dourado};
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    @media only screen and (max-width:640px) {
+        flex-wrap: wrap;
+    }
 `
 
 export const CaixaDescricaoServicos = styled.div `
@@ -17,6 +21,10 @@ export const CaixaDescricaoServicos = styled.div `
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width:640px) {
+        width: 100%;
+    }
 `
 
 export const ListaServicos = styled.div `
@@ -26,6 +34,10 @@ export const ListaServicos = styled.div `
     display: flex;
     justify-content: start;
     align-items: center;
+
+    @media only screen and (max-width:640px) {
+        width: 100%;
+    }
 `
 
 export const SetaPraCima = styled.img `

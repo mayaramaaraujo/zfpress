@@ -13,6 +13,13 @@ export const ContainerCabecalho = styled.div `
     box-sizing: border-box;
     height: auto;
     padding: 0px 15px 0px 15px;
+
+    @media only screen and (max-width: 640px){
+        //border: 1px solid red;
+        flex-direction: column;
+    }
+
+  
 `
 
 export const LogoZfCaixa = styled.div `
@@ -22,6 +29,15 @@ export const LogoZfCaixa = styled.div `
     display: flex;
     justify-content: start;
     padding: 10px 0px 30px 70px;
+
+    @media only screen and (max-width: 640px){
+        width: 100%;  
+        justify-content: center;
+        max-width: 640px;
+        padding: 10px;
+    }
+
+  
 `
 
 // filho do cabecalho
@@ -35,6 +51,12 @@ export const CaixaBuscaContainer = styled.div `
     justify-content: space-evenly;
     //border: 1px solid blue;
     padding-right: 25px;
+
+    @media only screen and (max-width: 640px){
+        width: 100%;
+        align-items: center;       
+    }
+    
 `
 
 // netos cabecalho
@@ -45,6 +67,13 @@ export const FaleConoscoContainer = styled.div `
     align-items: center;
     //border: 1px solid red;
     width: 80%;
+
+    @media only screen and (max-width: 640px){
+        //border: 1px solid red;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+    }
 `
 
 export const DataAtualContainer = styled.div `
@@ -95,7 +124,7 @@ export const CaixaInputs = styled.div `
 `
 
 export const Icones = styled.img `
-    margin: 0px 0px 0px 15px;
+    margin: 10px 0px 0px 15px;
     cursor: pointer;    
 `
 export const IconeDeBusca = styled(SearchIcon) `
