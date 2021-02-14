@@ -34,7 +34,7 @@ export const LogoZfCaixa = styled.div `
         width: 100%;  
         justify-content: center;
         max-width: 640px;
-        padding: 0px;
+        padding: 10px;
     }
 
   

@@ -44,6 +44,11 @@ export const CaixaCases = styled.div `
     //border: 1px solid red;
     display: flex;
     width: 90%;
+
+    @media only screen and (max-width: 640px){
+        flex-wrap: wrap;
+        width: 100%;
+    }
 `
 
 export const SetaDireitaImg = styled.img `
@@ -70,6 +75,9 @@ export const CaseCaixa = styled.div `
     box-sizing: border-box;
     //border: 1px solid red;
     height: auto;
+    @media only screen and (max-width:640px) {
+        width: 100%;
+    }
 `
 
 export const CaixaImagensCase = styled.div `

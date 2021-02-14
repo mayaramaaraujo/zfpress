@@ -15,12 +15,16 @@ export const CaixaTexto = styled.div `
     display: flex;
     flex-direction: column;
     //border: 1px solid red;
-    width: 100%;
+    width: 50%;
     height: 100%;
     box-sizing: border-box;
     justify-content: space-evenly;
     text-align: start;
     //margin: 60px;
+
+    @media only screen and (max-width:640px) {
+        width: 100%;
+    }
 
     
 `
@@ -61,9 +65,9 @@ export const Coroa = styled.img `
 `
 
 export const CaixaImagens = styled.div `
-    border: 1px solid red;
-    width: 100%;
-    height: auto;
+    //border: 1px solid red;
+    width: 50%;
+    height: 100vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -71,6 +75,7 @@ export const CaixaImagens = styled.div `
 
     @media only screen and (max-width: 640px) {
         height: 130vh;
+        width: 100%;
     }
 `
 

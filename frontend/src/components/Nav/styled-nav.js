@@ -18,7 +18,7 @@ export const NavCaixa = styled.div `
         justify-content: space-evenly;
         height: auto;
         min-width: 300px; 
-        margin: 0px;     
+        margin: 15px 0px;     
     }
 `
 
