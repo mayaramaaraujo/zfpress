@@ -8,7 +8,7 @@ export const CaixaServicos = styled.div `
     justify-content: space-evenly;
     align-items: center;
 
-    @media only screen and (max-width:) {
+    @media only screen and (max-width:840px) {
         flex-wrap: wrap;
     }
 `
