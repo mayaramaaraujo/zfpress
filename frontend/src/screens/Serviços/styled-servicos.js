@@ -22,7 +22,7 @@ export const CaixaDescricaoServicos = styled.div `
     justify-content: center;
     align-items: center;
 
-    @media only screen and (max-width:) {
+    @media only screen and (max-width: 840px) {
         width: 100%;
     }
 `
@@ -35,7 +35,7 @@ export const ListaServicos = styled.div `
     justify-content: start;
     align-items: center;
 
-    @media only screen and (max-width:) {
+    @media only screen and (max-width: 840px) {
         width: 100%;
     }
 `

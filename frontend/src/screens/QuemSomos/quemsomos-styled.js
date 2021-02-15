@@ -16,7 +16,7 @@ export const CaixaTitulo = styled.div `
     margin: 0px 0px 0px 50px;
     padding-top: 50px;
 
-    @media only screen and (max-width: ){
+    @media only screen and (max-width: 840px ){
         width: 75%;
     }
 `
