@@ -22,7 +22,7 @@ export const CaixaTexto = styled.div `
     text-align: start;
     //margin: 60px;
 
-    @media only screen and (max-width:640px) {
+    @media only screen and (max-width:) {
         width: 100%;
     }
 
@@ -55,7 +55,7 @@ export const TextoNossaEstrutura = styled.p `
     font-size: 1.1em;
     line-height: 35px;
 
-    @media only screen and (max-width: 640px){
+    @media only screen and (max-width: ){
         width: 100%;
     }
 `
@@ -73,7 +73,7 @@ export const CaixaImagens = styled.div `
     flex-direction: column;
     justify-content: space-between;
 
-    @media only screen and (max-width: 640px) {
+    @media only screen and (max-width: ) {
         height: 130vh;
         width: 100%;
     }

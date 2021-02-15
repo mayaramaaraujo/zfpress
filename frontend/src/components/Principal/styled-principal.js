@@ -12,7 +12,7 @@ export const CaixaPrincipal = styled.div `
     //flex-wrap: wrap;
     padding: 2%;
 
-    @media only screen and (max-width: 640px){
+    @media only screen and (max-width: 840px){
         flex-wrap: wrap;
         //border: 1px solid red;
         height: auto;
@@ -23,7 +23,7 @@ export const CaixaNoticiasPrincipais = styled.div `
     box-sizing: border-box;
     width: 80%;
 
-    @media only screen and (max-width: 640px){
+    @media only screen and (max-width: 840px){
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -39,7 +39,7 @@ export const CaixaNoticiasSecundarias = styled.div `
     overflow: auto;
     padding: 0px 1% 0px 1%;
 
-    @media only screen and (max-width: 640px){
+    @media only screen and (max-width: 840px){
         width: 100%;
         height: auto;
         margin: 10px 0px;
@@ -56,7 +56,7 @@ export const CaixaDestaques = styled.div `
     display: flex;
     justify-content: space-between;
 
-    @media only screen and (max-width: 640px){
+    @media only screen and (max-width: 840px){
         //border: 1px solid green;
         flex-wrap: wrap;
         height: 70vh;
@@ -72,7 +72,7 @@ export const CaixaSubDestaques = styled.div `
     display: flex;
     justify-content: space-between;
 
-    @media only screen and (max-width: 640px){
+    @media only screen and (max-width: 840px){
 
     }
 `
@@ -151,11 +151,13 @@ export const CaixaDestaquePrincipal = styled.div `
     position: relative;
     min-width: 300px;
 
-    @media only screen and (max-width: 640px){
+    @media only screen and (max-width: 840px){
         position: sticky;
         width: 100%;
         height: 35%;
     }
+
+ 
 `
 
 export const DescricaoDestaque = styled.p `
@@ -170,8 +172,12 @@ export const DescricaoDestaque = styled.p `
     color: white;
     font-size: 1.1em;
     
-    @media only screen and (max-width: 640px){
+    @media only screen and (max-width: 840px){
         bottom: -70px;
+    }
+
+    @media only screen and (min-width: 840px) {
+        bottom: 40px;
     }
 `
 
@@ -184,9 +190,13 @@ export const CaixaBolinhas = styled.div `
     justify-content: center;
     align-items: center;
 
-    @media only screen and (max-width: 640px){
+    @media only screen and (max-width: 840px){
         bottom: -100px;
     }
+
+    @media only screen and (min-width: 840px) {
+        bottom: 120px;
+    } 
 
 `
 
@@ -220,7 +230,7 @@ export const CaixaDestaqueSecundario = styled.div `
     box-sizing: border-box;
     max-height: 100%;
 
-    @media only screen and (max-width: 640px){
+    @media only screen and (max-width: 840px){
         //border: 1px solid yellow;
         width: 100%;
         height: auto;
@@ -259,6 +269,10 @@ export const CaixaImagemDestaque = styled.div `
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media only screen and (min-width: 840px) {
+        height: 96%;
+    }
 `
 
 export const CaixaImagemSubDestaque = styled.div `

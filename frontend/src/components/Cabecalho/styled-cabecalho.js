@@ -14,7 +14,7 @@ export const ContainerCabecalho = styled.div `
     height: auto;
     padding: 0px 15px 0px 15px;
 
-    @media only screen and (max-width: 640px){
+    @media only screen and (max-width: 840px){
         //border: 1px solid red;
         flex-direction: column;
     }
@@ -30,10 +30,10 @@ export const LogoZfCaixa = styled.div `
     justify-content: start;
     padding: 10px 0px 30px 70px;
 
-    @media only screen and (max-width: 640px){
+    @media only screen and (max-width: 840px){
         width: 100%;  
         justify-content: center;
-        max-width: 640px;
+        max-width: 840px;
         padding: 10px;
     }
 
@@ -52,7 +52,7 @@ export const CaixaBuscaContainer = styled.div `
     //border: 1px solid blue;
     padding-right: 25px;
 
-    @media only screen and (max-width: 640px){
+    @media only screen and (max-width: 840px){
         width: 100%;
         align-items: center;       
     }
@@ -68,7 +68,7 @@ export const FaleConoscoContainer = styled.div `
     //border: 1px solid red;
     width: 80%;
 
-    @media only screen and (max-width: 640px){
+    @media only screen and (max-width: 840px){
         //border: 1px solid red;
         flex-wrap: wrap;
         justify-content: center;

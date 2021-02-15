@@ -12,7 +12,7 @@ export const NavCaixa = styled.div `
     align-items: center;
     margin: 0px 30px 0px 30px;
 
-    @media only screen and (max-width: 640px){
+    @media only screen and (max-width: 840px){
         //border: 1px solid red;
         flex-wrap: wrap;
         justify-content: space-evenly;

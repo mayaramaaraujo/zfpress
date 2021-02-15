@@ -8,7 +8,7 @@ export const CaixaServicos = styled.div `
     justify-content: space-evenly;
     align-items: center;
 
-    @media only screen and (max-width:640px) {
+    @media only screen and (max-width:) {
         flex-wrap: wrap;
     }
 `
@@ -22,7 +22,7 @@ export const CaixaDescricaoServicos = styled.div `
     justify-content: center;
     align-items: center;
 
-    @media only screen and (max-width:640px) {
+    @media only screen and (max-width:) {
         width: 100%;
     }
 `
@@ -35,7 +35,7 @@ export const ListaServicos = styled.div `
     justify-content: start;
     align-items: center;
 
-    @media only screen and (max-width:640px) {
+    @media only screen and (max-width:) {
         width: 100%;
     }
 `

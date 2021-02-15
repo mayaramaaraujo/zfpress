@@ -15,6 +15,10 @@ export const CaixaTitulo = styled.div `
     min-width: 40%;
     margin: 0px 0px 0px 50px;
     padding-top: 50px;
+
+    @media only screen and (max-width: ){
+        width: 75%;
+    }
 `
 
 export const TituloQuemSomos1 = styled.h1 `
