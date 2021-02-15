@@ -45,7 +45,7 @@ export const CaixaCases = styled.div `
     display: flex;
     width: 90%;
 
-    @media only screen and (max-width: 640px){
+    @media only screen and (max-width: 840px){
         flex-wrap: wrap;
         width: 100%;
     }
@@ -75,7 +75,7 @@ export const CaseCaixa = styled.div `
     box-sizing: border-box;
     //border: 1px solid red;
     height: auto;
-    @media only screen and (max-width:640px) {
+    @media only screen and (max-width:840px) {
         width: 100%;
     }
 `
