@@ -9,6 +9,9 @@ export const CaixaNossaEstrutura = styled.div `
     align-items: center;
     margin: 60px;
     flex-wrap: wrap;
+
+    @media only screen and (max-width: 840px){
+    }
 `
 
 export const CaixaTexto = styled.div `
@@ -22,7 +25,7 @@ export const CaixaTexto = styled.div `
     text-align: start;
     //margin: 60px;
 
-    @media only screen and (max-width:) {
+    @media only screen and (max-width: 840px) {
         width: 100%;
     }
 
@@ -42,9 +45,9 @@ export const TituloNossaEstrutura = styled.p `
     width: 35%;
     letter-spacing: 3px;
     font-size: 2.5em;
-    @media only screen and (max-width){
+    @media only screen and (max-width: 840px){
         width: 100%;
-        border: 1px solid red;
+        //border: 1px solid red;
     }
 
 `
@@ -55,7 +58,7 @@ export const TextoNossaEstrutura = styled.p `
     font-size: 1.1em;
     line-height: 35px;
 
-    @media only screen and (max-width: ){
+    @media only screen and (max-width: 840px){
         width: 100%;
     }
 `
@@ -73,7 +76,7 @@ export const CaixaImagens = styled.div `
     flex-direction: column;
     justify-content: space-between;
 
-    @media only screen and (max-width: ) {
+    @media only screen and (max-width: 840px ) {
         height: 130vh;
         width: 100%;
     }
