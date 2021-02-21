@@ -28,7 +28,7 @@ export const LogoZfCaixa = styled.div `
     box-sizing: border-box;
     display: flex;
     justify-content: start;
-    padding: 10px 0px 30px 70px;
+    padding: 5px 0px 5px 60px;
 
     @media only screen and (max-width: 840px){
         width: 100%;  

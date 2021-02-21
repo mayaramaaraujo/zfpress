@@ -7,7 +7,7 @@ function Cabecalho(){
     return (
         <ContainerCabecalho>
             <LogoZfCaixa>
-                <img src={LogoZF} />
+                <img width="220px" src={LogoZF} />
             </LogoZfCaixa>
             <CaixaBusca />
         </ContainerCabecalho>

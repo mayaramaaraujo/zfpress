@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { cinzaClaro, dourado } from '../../constants/cores'
+import { cinzaClaro, dourado, grafite } from '../../constants/cores'
 
 export const NavCaixa = styled.div `
     //border: 1px solid ${cinzaClaro};
@@ -22,7 +22,8 @@ export const NavCaixa = styled.div `
     }
 `
 
-export const LinksNav = styled.div `
+export const LinksNav = styled.a `
+    display: block;
     //border: 1px solid blue;
     box-sizing: border-box;
     text-decoration: none;

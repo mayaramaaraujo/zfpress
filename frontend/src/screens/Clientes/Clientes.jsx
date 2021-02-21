@@ -98,11 +98,11 @@ function Clientes() {
             </CaixaTituloClientes>
             <CaixaClientesLogos>
                 
-                {ArrayDeLogos.map((logo => {
+                {ArrayDeLogos.map(((logo, i) => {
                     return (
                         <CaixaLogo>
                             <a href={logo.site}>
-                                <Logo src={logo.imagem} />
+                                <Logo src={logo.imagem} key={i} />
                             </a>
                         </CaixaLogo>
                     )
