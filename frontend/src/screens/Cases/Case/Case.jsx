@@ -11,9 +11,9 @@ function Case(props) {
                 {props.imagens.map((imagem, i) => { 
 
                     if(i == 0){
-                        return <ImagemPrincipal src={imagem} />
+                        return <ImagemPrincipal src={imagem} key={i} />
                     } else {
-                        return <ImagemSecundaria src={imagem}/>
+                        return <ImagemSecundaria src={imagem} key={i}/>
                     }                   
                 })}
             </CaixaImagensCase>

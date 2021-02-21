@@ -61,8 +61,8 @@ function Cases() {
             <ContainerCases>
                 <SetaEsquerdaImg src={SetaEsquerda} onClick={passarParaEsquerda}/>
                     <CaixaCases>
-                        {mockCases[posicao].map((item) => {
-                            return <Case titulo={item.titulo} descricao={item.descricao} imagens={item.imagens} />
+                        {mockCases[posicao].map((item,i) => {
+                            return <Case key={i} titulo={item.titulo} descricao={item.descricao} imagens={item.imagens} />
                         })}
                     </CaixaCases>                    
                 <SetaDireitaImg src={SetaDireita} onClick={passarParaDireita}/>

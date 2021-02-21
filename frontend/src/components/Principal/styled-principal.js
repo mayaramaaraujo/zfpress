@@ -81,10 +81,11 @@ export const CaixaSubDestaques = styled.div `
 
 export const CaixaNoticiaSecudaria = styled.div `
     border-bottom: 4px solid ${dourado};
-    padding: 0px 5px 0px 5px;
+    padding: 10px 5px 10px 5px;
     box-sizing: border-box;
     width: 100%;
     height: 23%;
+    //border: 1px solid red;
 `
 
 export const Paragrafo = styled.p `
