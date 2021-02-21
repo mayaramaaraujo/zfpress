@@ -13,8 +13,9 @@ function Link(props) {
         setAparecer("none")
     }
 
+
     return (
-        <div>
+        <div onClick={props.funcao}>
             <CoroaImg src={CoroaDourada} aparecerCoroa={aparecerCoroa}/>
             <LinksNav 
                 onMouseOver={onMouseOverCoroa}

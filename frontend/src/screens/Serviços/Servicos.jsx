@@ -81,6 +81,7 @@ function Servicos(){
                                         texto={grafite}
                                         setIndex={setIndex}
                                         index={i}
+                                        key={i}
                                     />
                         }   
                         return <ItemServico 
@@ -88,7 +89,8 @@ function Servicos(){
                                     fundo={grafite} 
                                     texto={dourado}
                                     setIndex={setIndex}
-                                    index={i} 
+                                    index={i}
+                                    key={i} 
                                 />
                     })}
 
