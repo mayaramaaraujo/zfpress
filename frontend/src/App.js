@@ -9,7 +9,7 @@ import Inicio from './screens/Home/Inicio';
 import NossaEstrutura from './screens/NossaEstrutura/NossaEstrutura';
 import QuemSomos from './screens/QuemSomos/QuemSomos';
 import Servicos from './screens/Serviços/Servicos';
-import { scroller } from "react-scroll";
+import Construcao from './screens/construcao';
 
 function App() {
   const inicio = useRef(null)
@@ -24,9 +24,12 @@ function App() {
     quemSomos.current.scrollIntoView()
   }
 
+  const estaEmConstrucao = true
 
   return (
     <div className='App'>
+        {estaEmConstrucao ? <Construcao /> : <div>
+          
         <div ref={inicio} className="inicio">
           <Inicio />
         </div>
@@ -61,6 +64,8 @@ function App() {
       <div>
         <Rodape ref={rodape}/>
       </div>
+      </div> }
+
       
     </div>
   );
