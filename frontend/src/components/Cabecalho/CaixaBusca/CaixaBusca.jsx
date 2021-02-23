@@ -4,12 +4,12 @@ import FaleConosco from './FaleConosco/FaleConosco'
 import {CaixaBuscaContainer} from '../styled-cabecalho'
 import { dias, meses } from '../../../constants/arraysUteis'
 
-function CaixaBusca() {
+function CaixaBusca(props) {
     const data = new Date()
 
     return (
         <CaixaBuscaContainer>
-            <FaleConosco />
+            <FaleConosco/>
             <DataAtual 
                 diaSemana={dias[data.getDay()]} 
                 dia={data.getDate()} 
