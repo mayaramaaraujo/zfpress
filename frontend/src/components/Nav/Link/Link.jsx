@@ -20,7 +20,6 @@ function Link(props) {
             <LinksNav 
                 onMouseOver={onMouseOverCoroa}
                 onMouseOut={onMouseOutCoroa} 
-                href=""
             >
                 {props.caminho}
             

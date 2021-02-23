@@ -3,13 +3,13 @@ import LogoZF from '../../assets/logo-zf.png'
 import { ContainerCabecalho, LogoZfCaixa } from './styled-cabecalho'
 import CaixaBusca from './CaixaBusca/CaixaBusca'
 
-function Cabecalho(){
+function Cabecalho(props){
     return (
         <ContainerCabecalho>
             <LogoZfCaixa>
                 <img width="220px" src={LogoZF} />
             </LogoZfCaixa>
-            <CaixaBusca />
+            <CaixaBusca/>
         </ContainerCabecalho>
     )
 }

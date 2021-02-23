@@ -28,7 +28,7 @@ export const LinksNav = styled.a `
     box-sizing: border-box;
     text-decoration: none;
     cursor: pointer;
-    color: ${dourado};
+    color: ${grafite};
     font-weight: bold;
     padding: 0px 10px 0px 10px;
     position: relative;
