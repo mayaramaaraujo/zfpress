@@ -25,7 +25,7 @@ function App() {
     ref.current.scrollIntoView({behavior: "smooth"})
   }
 
-  const estaEmConstrucao = true
+  const estaEmConstrucao = false
 
   return (
     <div className='App'>
