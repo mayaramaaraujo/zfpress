@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import './App.css';
 import Link from './components/Nav/Link/Link';
-import { NavCaixa } from './components/Nav/styled-nav';
+import { LinkCaixa, NavCaixa } from './components/Nav/styled-nav';
 import Rodape from './components/Rodape/Rodape';
 import Cases from './screens/Cases/Cases.jsx';
 import Clientes from './screens/Clientes/Clientes';
@@ -34,13 +34,13 @@ function App() {
         <div ref={inicio} className="inicio">
           <Cabecalho/>
           <NavCaixa>
-            <div onClick={() => scrollTo(quemSomos)}><Link caminho="QUEM SOMOS"/></div>
-            <div onClick={() => scrollTo(nossaEstrutura)}><Link caminho="NOSSA ESTRUTURA"/></div>
-            <div onClick={() => scrollTo(servicos)}><Link caminho="SERVIÇOS" /></div>
-            <div onClick={() => scrollTo(clientes)}><Link caminho="CLIENTES" /></div>
-            <div onClick={() => scrollTo(cases)}><Link caminho="CASES" /></div>
-            <div onClick={() => scrollTo(inicio)}><Link caminho="RELEASES" /></div>
-            <div onClick={() => scrollTo(rodape)}><Link caminho="CONTATO" /></div>
+            <LinkCaixa onClick={() => scrollTo(quemSomos)}><Link caminho="O QUE FAZEMOS"/></LinkCaixa>
+            <LinkCaixa onClick={() => scrollTo(nossaEstrutura)}><Link caminho="NOSSA ESTRUTURA"/></LinkCaixa>
+            <LinkCaixa onClick={() => scrollTo(servicos)}><Link caminho="SERVIÇOS" /></LinkCaixa>
+            <LinkCaixa onClick={() => scrollTo(clientes)}><Link caminho="CLIENTES" /></LinkCaixa>
+            <LinkCaixa onClick={() => scrollTo(cases)}><Link caminho="CASES" /></LinkCaixa>
+            <LinkCaixa onClick={() => scrollTo(inicio)}><Link caminho="RELEASES" /></LinkCaixa>
+            <LinkCaixa onClick={() => scrollTo(rodape)}><Link caminho="CONTATO" /></LinkCaixa>
           </NavCaixa>
           <Principal/>
         </div>
@@ -62,13 +62,13 @@ function App() {
         <div className="nav-footer">
           <div className="center">
           <NavCaixa>
-            <div onClick={() => scrollTo(quemSomos)}><Link caminho="QUEM SOMOS"/></div>
-            <div onClick={() => scrollTo(nossaEstrutura)}><Link caminho="NOSSA ESTRUTURA"/></div>
-            <div onClick={() => scrollTo(servicos)}><Link caminho="SERVIÇOS" /></div>
-            <div onClick={() => scrollTo(clientes)}><Link caminho="CLIENTES" /></div>
-            <div onClick={() => scrollTo(cases)}><Link caminho="CASES" /></div>
-            <div onClick={() => scrollTo(inicio)}><Link caminho="RELEASES" /></div>
-            <div onClick={() => scrollTo(rodape)}><Link caminho="CONTATO" /></div>
+            <LinkCaixa onClick={() => scrollTo(quemSomos)}><Link caminho="O QUE FAZEMOS"/></LinkCaixa>
+            <LinkCaixa onClick={() => scrollTo(nossaEstrutura)}><Link caminho="NOSSA ESTRUTURA"/></LinkCaixa>
+            <LinkCaixa onClick={() => scrollTo(servicos)}><Link caminho="SERVIÇOS" /></LinkCaixa>
+            <LinkCaixa onClick={() => scrollTo(clientes)}><Link caminho="CLIENTES" /></LinkCaixa>
+            <LinkCaixa onClick={() => scrollTo(cases)}><Link caminho="CASES" /></LinkCaixa>
+            <LinkCaixa onClick={() => scrollTo(inicio)}><Link caminho="RELEASES" /></LinkCaixa>
+            <LinkCaixa onClick={() => scrollTo(rodape)}><Link caminho="CONTATO" /></LinkCaixa>
           </NavCaixa>
           </div>
         </div>

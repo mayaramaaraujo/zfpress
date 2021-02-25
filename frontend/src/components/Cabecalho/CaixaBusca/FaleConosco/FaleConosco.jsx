@@ -1,8 +1,8 @@
 import React from 'react'
 import { FaleConoscoContainer, Links, Inputs, CaixaInputs, Icones, IconeDeBusca } from '../../styled-cabecalho';
-import IconFacebook from '../../../../assets/facebook.png'
-import IconInstagram from '../../../../assets/instagrampequeno.png'
 import { Facebook, Instagram } from '../../../../constants/linksUteis';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import FacebookIcon from '@material-ui/icons/Facebook';
 
 function FaleConosco(){
     return (
@@ -15,10 +15,14 @@ function FaleConosco(){
                 <IconeDeBusca />                    
             </CaixaInputs>
             <a href={Instagram}>
-                <Icones src={IconInstagram} />
+                <Icones>
+                    <InstagramIcon />
+                </Icones>
             </a>
             <a href={Facebook}>
-                <Icones src={IconFacebook} />
+                <Icones>
+                    <FacebookIcon />
+                </Icones>
             </a>
 
         </FaleConoscoContainer>

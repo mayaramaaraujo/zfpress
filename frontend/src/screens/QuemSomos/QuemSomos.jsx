@@ -6,8 +6,7 @@ function QuemSomos(){
         <CaixaQuemSomos>
 
             <CaixaTitulo>
-                <TituloQuemSomos1>QUEM</TituloQuemSomos1>
-                <TituloQuemSomos2>SOMOS</TituloQuemSomos2>
+                O QUE FAZEMOS
             </CaixaTitulo>
 
             <ContainerTexto>

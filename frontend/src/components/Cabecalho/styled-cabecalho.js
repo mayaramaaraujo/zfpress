@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { cinzaClaro, cinzaTexto } from '../../constants/cores'
+import { cinzaClaro, cinzaTexto, marrom, salmao } from '../../constants/cores'
 import SearchIcon from '@material-ui/icons/Search';
 
 
@@ -13,6 +13,7 @@ export const ContainerCabecalho = styled.div `
     box-sizing: border-box;
     height: auto;
     padding: 0px 15px 0px 15px;
+    background-color: ${marrom};
 
     @media only screen and (max-width: 840px){
         //border: 1px solid red;
@@ -28,7 +29,7 @@ export const LogoZfCaixa = styled.div `
     box-sizing: border-box;
     display: flex;
     justify-content: start;
-    padding: 5px 0px 5px 60px;
+    padding: 25px 0px 25px 60px;
 
     @media only screen and (max-width: 840px){
         width: 100%;  
@@ -78,25 +79,26 @@ export const FaleConoscoContainer = styled.div `
 
 export const DataAtualContainer = styled.div `
     //border: 1px solid red;
-    color: ${cinzaClaro};
+    color: ${salmao};
 `
 
 export const Links = styled.div `
     text-decoration: none;
     cursor: pointer;
-    color: ${cinzaTexto};
+    color: ${salmao};
     font-weight: bold;
     font-size: 0.8em;
     margin: 0px 15px 0px 0px;
     
     :hover {
-        border-bottom: 1px solid ${cinzaClaro}
+        border-bottom: 1px solid ${salmao};
     }
 `
 
 export const Inputs = styled.input `
     border: none;
-    color: ${cinzaTexto};
+    color: ${marrom};
+    background-color: ${salmao};
 
     :focus {
         outline: 0;
@@ -117,15 +119,17 @@ export const CaixaInputs = styled.div `
     border-radius: 10px;
     box-sizing: border-box;
     margin: 0px 15px 0px 15px;
+    background-color: ${salmao};
     
     :active {
         border: 2px solid ${cinzaClaro};
     }
 `
 
-export const Icones = styled.img `
+export const Icones = styled.a `
     margin: 10px 0px 0px 15px;
-    cursor: pointer;    
+    cursor: pointer;
+    color: ${salmao};    
 `
 export const IconeDeBusca = styled(SearchIcon) `
     cursor: pointer;

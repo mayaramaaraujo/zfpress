@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { cinzaClaro, cinzaMaisClaro } from '../../constants/cores'
+import { cinzaClaro, cinzaMaisClaro, marrom, salmao } from '../../constants/cores'
 
 const RodapeCaixa = styled.div `
     display: flex;
@@ -10,12 +10,12 @@ const RodapeCaixa = styled.div `
 `
 
 const Endereco = styled.p `
-    color: ${cinzaMaisClaro};
+    color: ${marrom};
 `
 
 const Telefone = styled.p `
     font-weight: bold;
-    color: ${cinzaClaro};
+    color: ${marrom};
     padding: 0px;
     padding-bottom: 15px;
     margin: 0px;

@@ -4,7 +4,7 @@ import Seta from '../../assets/segattoseta.png'
 import SetaBaixo from '../../assets/setabaixo.png'
 import DescricaoServico from './DescricaoServico/DescricaoServico';
 import ItemServico from './ItemServico/ItemServico';
-import { dourado, grafite } from '../../constants/cores';
+import { marrom, salmao } from '../../constants/cores';
 
 const mockDescricao = [
     {
@@ -77,8 +77,8 @@ function Servicos(){
                         if(index === i){
                             return <ItemServico 
                                         servico={item.titulo} 
-                                        fundo={dourado} 
-                                        texto={grafite}
+                                        fundo={salmao} 
+                                        texto={marrom}
                                         setIndex={setIndex}
                                         index={i}
                                         key={i}
@@ -86,8 +86,8 @@ function Servicos(){
                         }   
                         return <ItemServico 
                                     servico={item.titulo} 
-                                    fundo={grafite} 
-                                    texto={dourado}
+                                    fundo={marrom} 
+                                    texto={salmao}
                                     setIndex={setIndex}
                                     index={i}
                                     key={i} 

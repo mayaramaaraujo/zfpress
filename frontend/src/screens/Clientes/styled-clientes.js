@@ -1,5 +1,5 @@
 import styled from 'styled-components' 
-import { dourado } from '../../constants/cores'
+import { dourado, marrom } from '../../constants/cores'
 
 export const CaixaClientes = styled.div `
     //border: 1px solid red;
@@ -9,17 +9,21 @@ export const CaixaClientes = styled.div `
 export const CaixaTituloClientes = styled.div `
     //border: 1px solid red;
     margin: 60px 0px 0px 60px;
-    width: 25%;
+    width: 15%;
     height: 20%;
-    text-align: start;
+    text-align: center;
+    display: flex;
 `
 
 export const TituloClientes = styled.div `
-    color: ${dourado};
-    font-size: 2.5em;
+    color: ${marrom};
+    border: 1px solid ${marrom};
+    font-size: 3.5em;
     letter-spacing: 3px;
     padding-top: 15px;
-    font-weight: lighter;
+    font-weight: 900;
+    padding: 15px;
+    margin-bottom: 20px;
 `
 
 export const CoroaImgClientes = styled.img `
