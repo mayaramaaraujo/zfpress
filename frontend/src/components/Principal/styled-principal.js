@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { cinzaClaro, cinzaTexto, dourado } from '../../constants/cores'
+import { cinzaClaro, cinzaTexto, dourado, marrom } from '../../constants/cores'
 
 //PAIS
 
@@ -80,7 +80,7 @@ export const CaixaSubDestaques = styled.div `
 // noticias secundarias laterais
 
 export const CaixaNoticiaSecudaria = styled.div `
-    border-bottom: 4px solid ${dourado};
+    border-bottom: 4px solid ${marrom};
     padding: 10px 5px 10px 5px;
     box-sizing: border-box;
     width: 100%;
@@ -96,7 +96,7 @@ export const Paragrafo = styled.p `
     margin: 0px;
     text-align: start;
     font-weight: bolder;
-    color: ${dourado};
+    color: ${marrom};
     letter-spacing: 2px;
     font-size: 1.2em;
 `
@@ -132,7 +132,7 @@ export const TituloSub = styled.h4 `
     margin: 0px;
     padding: 0px 0px 0px 5px;
     text-align: start;
-    color: ${dourado};
+    color: ${marrom};
 `
 
 export const ParagrafoSub = styled.p `
@@ -251,7 +251,7 @@ export const TituloSec = styled.h4 `
     margin: 0px;
     padding: 0px;
     font-weight: bold;
-    color: ${dourado};
+    color: ${marrom};
     text-align: start;
 `
 

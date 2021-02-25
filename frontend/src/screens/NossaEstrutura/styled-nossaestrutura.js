@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { grafite } from '../../constants/cores'
+import { grafite, marrom } from '../../constants/cores'
 
 export const CaixaNossaEstrutura = styled.div `
     //height: 130vh;
@@ -35,13 +35,14 @@ export const CaixaTexto = styled.div `
 export const CaixaTitulo = styled.div `
     //border: 1px solid black;
     //margin: 60px;
-    font-weight: lighter;
+    font-weight: bolder;
+    font-size: 1.3em;
 `
 export const TituloNossaEstrutura = styled.p `
     padding: 10px 0px 10px 0px;
     margin: 0px;
     //border: 1px solid red;
-    color: ${grafite};
+    color: ${marrom};
     width: 35%;
     letter-spacing: 3px;
     font-size: 2.5em;
@@ -51,10 +52,11 @@ export const TituloNossaEstrutura = styled.p `
     }
 
 `
+
 export const TextoNossaEstrutura = styled.p `
     //border: 1px solid blue;
     letter-spacing: 3px;
-    width: 50%;
+    width: 65%;
     font-size: 1.1em;
     line-height: 35px;
 

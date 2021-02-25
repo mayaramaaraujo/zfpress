@@ -54,7 +54,6 @@ function Cases() {
     return (
         <CasesCaixa>
             <CaixaCasesTit>
-                <img src={CoroaDourada} />
                 <TituloCases>CASES</TituloCases>
                 <SubTitulo>ENTRETERIMENTO</SubTitulo>                
             </CaixaCasesTit>
