@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { dourado } from '../../constants/cores'
+import { dourado, marrom, salmao } from '../../constants/cores'
 
 export const CasesCaixa = styled.div `
     text-align: start;
@@ -9,28 +9,36 @@ export const CasesCaixa = styled.div `
 `
 
 export const CaixaCasesTit = styled.div `
-    margin: 60px 0px 0px 60px;
-    width: 25%;
+    margin: 60px 0px 20px 60px;
+    width: 20%;
     height: 20%;
     text-align: start;
+    border: 1px solid ${marrom};
 `
 
 export const TituloCases = styled.div `
-    color: ${dourado};
+    color: ${marrom};
     font-size: 2.5em;
     letter-spacing: 3px;
-    padding-top: 15px;
-    font-weight: lighter;
+    padding: 15px;
+    padding-left: 25px;
+    font-weight: normal;
+    height: 50px;
 `
 
 export const SubTitulo = styled.p `
     display: inline;
-    background-color: ${dourado};
-    color: white;
-    letter-spacing: 3px;
+    background-color: ${marrom};
+    color: ${salmao};
+    letter-spacing: 4px;
     padding: 2px;
     margin: 0px;
+    font-weight: bolder;
     box-sizing:border-box;
+    position: absolute;
+    left: 120px;
+    padding: 10px 45px;
+    margin: -20px;
 `
 
 export const ContainerCases = styled.div `

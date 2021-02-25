@@ -93,7 +93,6 @@ function Clientes() {
     return (
         <CaixaClientes className="Clientes">
             <CaixaTituloClientes>
-                <CoroaImgClientes src={CoroaDouradaClientes} />
                 <TituloClientes>CLIENTES</TituloClientes>
             </CaixaTituloClientes>
             <CaixaClientesLogos>

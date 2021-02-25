@@ -1,11 +1,11 @@
 import styled from 'styled-components'
-import { dourado, grafite } from '../../constants/cores'
+import { dourado, grafite, marrom, salmao } from '../../constants/cores'
 
 export const CaixaServicos = styled.div `
-    background-color: ${dourado};
+    background-color: ${marrom};
     min-height: 100vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 
     @media only screen and (max-width:840px) {
@@ -14,9 +14,9 @@ export const CaixaServicos = styled.div `
 `
 
 export const CaixaDescricaoServicos = styled.div `
-    width: 60%;
-    height: 85%;
-    background-color: white;
+    width: 65%;
+    height: 100%;
+    background-color: ${salmao};
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,9 +30,9 @@ export const CaixaDescricaoServicos = styled.div `
 export const ListaServicos = styled.div `
     width: 30%;
     height: 95%;
-    background-color: ${grafite};
+    background-color: ${marrom};
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 
     @media only screen and (max-width: 840px) {
@@ -72,7 +72,7 @@ export const Descricao = styled.div `
 `
 
 export const TitDescricao = styled.h1 `
-    color: ${dourado};
+    color: ${marrom};
     width: 35%;
     font-size: 2.3em;
 `
@@ -107,9 +107,8 @@ export const Item = styled.div `
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 20px;
+    padding-right: 0px;
     padding-left: 5px;
-    text-align: right;
 `
 
 export const TitItem = styled.h3 `

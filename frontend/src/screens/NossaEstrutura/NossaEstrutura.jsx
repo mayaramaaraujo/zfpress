@@ -23,7 +23,6 @@ function NossaEstrutura(){
         <CaixaNossaEstrutura>
             <CaixaTexto>
                 <CaixaTitulo >
-                    <Coroa src={CoroaPreta} />                    
                     <TituloNossaEstrutura className="Clientes">NOSSA ESTRUTURA</TituloNossaEstrutura>
                 </CaixaTitulo>
                 <TextoNossaEstrutura>

@@ -1,9 +1,9 @@
 import styled from 'styled-components'
-import {cinzaMaisClaro, grafite } from '../../constants/cores'
+import { grafite, marrom, salmao } from '../../constants/cores'
 
 export const CaixaQuemSomos = styled.div `
     min-height: 80vh;
-    background-color: ${cinzaMaisClaro};
+    background-color: ${salmao};
     display: flex;
     flex-direction: column;
 `
@@ -11,10 +11,15 @@ export const CaixaQuemSomos = styled.div `
 export const CaixaTitulo = styled.div `
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 45%;
+    font-weight: bold;
+    color: ${marrom};
+    font-size: 2.5em;
+    border: 1px solid ${marrom};
     min-width: 40%;
-    margin: 0px 0px 0px 50px;
-    padding-top: 50px;
+    padding: 20px;
+    align-self: center;
+    margin-top: 20px;
 
     @media only screen and (max-width: 840px ){
         width: 75%;
@@ -48,6 +53,15 @@ export const TituloQuemSomos2 = styled.h1 `
 export const ContainerTexto = styled.div `
     display: flex;
     justify-content: center;
+    align-self: center;
+    width: 50%;
+
+    @media only screen and (max-width: 840px){
+        width: 100%;
+    }
+
+
+
 `
 
 export const CaixaParagrafo = styled.div `
