@@ -84,7 +84,10 @@ export const CaixaNoticiaSecudaria = styled.div `
     padding: 10px 5px 10px 5px;
     box-sizing: border-box;
     width: 100%;
-    height: 23%;
+    min-height: 120px;
+    max-height: 120px;
+    //min-height: 23%;
+    //max-height: 23%;
     //border: 1px solid red;
 `
 

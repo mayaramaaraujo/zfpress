@@ -1,6 +1,8 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { CaixaNoticiasSecundarias, Paragrafo } from '../styled-principal';
 import NoticiaSecundaria from './NoticiaSecundaria/NoticiaSecundaria';
+import {BaseUrlApi} from '../../../constants/linksUteis';
+import axios from 'axios';
 
 const MockNoticiaSecundaria = {
     titulo: "Lorem Ipsum",
@@ -8,28 +10,37 @@ const MockNoticiaSecundaria = {
 }
 
 function NoticiasSecundarias() {
+        
+    const [noticiasLaterais, setNoticiasLaterais] = useState([])
+
+    const PegarDestaquesLaterais = async () => {
+        try {
+           const response = await axios.get(`${BaseUrlApi}/noticia/laterais`)
+           setNoticiasLaterais(response.data)
+           console.log(response.data)            
+        } catch (error) {
+            console.log(error)
+        }        
+    }
+
+    useEffect(() => {
+        PegarDestaquesLaterais()
+    }, [])
+
+
     return (
         <CaixaNoticiasSecundarias>
             <Paragrafo>MAIS LIDAS</Paragrafo>
-            <NoticiaSecundaria 
-                titulo={MockNoticiaSecundaria.titulo}
-                descricao={MockNoticiaSecundaria.descricao}
-            />
-            
-            <NoticiaSecundaria 
-                titulo={MockNoticiaSecundaria.titulo}
-                descricao={MockNoticiaSecundaria.descricao}
-            />
 
-            <NoticiaSecundaria 
-                titulo={MockNoticiaSecundaria.titulo}
-                descricao={MockNoticiaSecundaria.descricao}
-            />
+            {noticiasLaterais ? noticiasLaterais.map((notica) => {
+                return (
+                    <NoticiaSecundaria 
+                        titulo={notica.titulo}
+                        descricao={notica.texto}
+                    />
+                )
+            }) : "Carregando..."}            
 
-            <NoticiaSecundaria 
-                titulo={MockNoticiaSecundaria.titulo}
-                descricao={MockNoticiaSecundaria.descricao}
-            />
         </CaixaNoticiasSecundarias>
     )
 }

@@ -4,8 +4,8 @@ import { CaixaNoticiaSecudaria, ParagrafoNoticiaSec, TituloNoticiasSec } from '.
 function NoticiaSecundaria(props) {
     return (
         <CaixaNoticiaSecudaria>
-            <TituloNoticiasSec>{props.titulo}</TituloNoticiasSec>
-            <ParagrafoNoticiaSec>{props.descricao}</ParagrafoNoticiaSec>
+            <TituloNoticiasSec>{props.titulo.length > 25 ? props.titulo.substr(0,25) + "..." : props.titulo}</TituloNoticiasSec>
+            <ParagrafoNoticiaSec>{props.descricao.length > 70 ? props.descricao.substr(0,70) + "..." : props.descricao}</ParagrafoNoticiaSec>
         </CaixaNoticiaSecudaria>
     )
 }

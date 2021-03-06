@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import NoticiasSecundarias from './NoticiasSecundarias/NoticiasSecundarias';
 import PrincipaisNoticias from './PrincipaisNoticias/PrincipaisNoticias';
 import { CaixaPrincipal } from './styled-principal';
 
+
 function Principal() {
+
+
     return (
         <CaixaPrincipal>
             <PrincipaisNoticias />

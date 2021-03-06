@@ -3,48 +3,15 @@ import { CaixaDestaques } from '../../styled-principal';
 import DestaquePrincipal from './DestaquePrincipal.jsx/DestaquePrincipal';
 import DestaqueSecundario from './DestaqueSecundario/DestaqueSecundario';
 
-const mockDestaques = [
-    {   
-        imagem: "https://picsum.photos/500/430",
-        descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum orci euismod eros commodo tincidunt."
-    },
-    {   
-        imagem: "https://picsum.photos/500/431",
-        descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum orci euismod eros commodo tincidunt."
-    },
-    {   
-        imagem: "https://picsum.photos/500/433",
-        descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum orci euismod eros commodo tincidunt."
-    },
-    {   
-        imagem: "https://picsum.photos/500/434",
-        descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum orci euismod eros commodo tincidunt."
-    },
-    {   
-        imagem: "https://picsum.photos/500/435",
-        descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum orci euismod eros commodo tincidunt."
-    },
-    {   
-        imagem: "https://picsum.photos/500/436",
-        descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum orci euismod eros commodo tincidunt."
-    },
-    {   
-        imagem: "https://picsum.photos/500/437",
-        descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum orci euismod eros commodo tincidunt."
-    }
-]
-
 const mockSecundario = {
     titulo: "Secundário",
     descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     imagem: "https://picsum.photos/300/320"
 }
 
-function Destaques() {
-    const [tamanho, setTamanho] = useState(mockDestaques.length - 1) //4
+function Destaques(props) {
+    const [tamanho, setTamanho] = useState(6) //4
     const [imagemIndex, setImagemIndex] = useState(0) //0
-
-    //console.log(tamanho)
 
     const ProximaImagem = () => {
         if(imagemIndex === tamanho){
@@ -63,14 +30,14 @@ function Destaques() {
     }, [imagemIndex])
 
 
+
     return (
         <CaixaDestaques>
             <DestaquePrincipal
-                imagem={mockDestaques[imagemIndex].imagem}
-                descricao={mockDestaques[imagemIndex].descricao}
+                //imagem={noticias[imagemIndex].imagem}
+                //descricao={noticias[imagemIndex].texto}
                 index={imagemIndex}
-                setIndex={setImagemIndex}
-            />
+                setIndex={setImagemIndex}            />            
 
             <DestaqueSecundario 
                 titulo={mockSecundario.titulo}
