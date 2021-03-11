@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import CabecalhoAdmin from './screens/Admin/Cabecalho';
-import Admin from './screens/Admin/Cabecalho';
-import CadastroPrincipal from './screens/Admin/CadastroPrincipal/CadastroPrincipal';
+import CadastroNoticia from './screens/Admin/CadastroNoticia/CadastroNoticia';
+import Login from './screens/Admin/Login/Login';
 import PaginaInicial from './screens/PaginaInicial/PaginaInicial';
 
 function Router() {
@@ -34,10 +34,11 @@ function Router() {
           </Route>
           <Route exact path="/admin">
             <CabecalhoAdmin />
+            <Login />
           </Route>
-          <Route exact path="/admin/cadastro/principal">
+          <Route exact path="/admin/noticia">
             <CabecalhoAdmin />
-            <CadastroPrincipal/>
+            <CadastroNoticia />
           </Route>
         </Switch>      
       </BrowserRouter>

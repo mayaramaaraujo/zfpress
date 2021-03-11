@@ -30,12 +30,13 @@ function SubDestaques() {
 
     return (
         <CaixaSubDestaques>
-            {subDestaques ? subDestaques.map((subDestaque) => {
+            {subDestaques ? subDestaques.map((subDestaque, i) => {
                 return (
                 <NoticiaSubDestaque 
                     imagem={subDestaque.imagem}
                     titulo={subDestaque.titulo}
                     descricao={subDestaque.texto}
+                    key={i}
                 />)
             }): "carregando.."}
 

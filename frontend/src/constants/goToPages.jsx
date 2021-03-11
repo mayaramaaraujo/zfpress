@@ -25,3 +25,7 @@ export const goBusca = (history) => {
 export const goReleases = (history) => {
     history.push("/releases")
 }
+
+export const goToCadastroNoticias = (history) => {
+    history.push("/admin/noticia")
+}
